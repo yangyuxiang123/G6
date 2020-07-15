@@ -1,38 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import pages from './pages'
 import { Message } from 'element-ui'
+import NProgress  from 'nprogress'
+import 'nprogress/nprogress.css'
 
 Vue.use(Router)
 
 let router =  new Router({
-  routes: [
-    {
-      path: '/404',
-      component: () => import('@/view/404')
-    },
-    {
-      path: '/login',
-      component: () => import('@/view/auth/login.vue')
-    },
-    {
-      path: '*',
-      redirect: '/404',
-    },
-    {
-      path: '/',
-      redirect: '/login',
-    },
-    {
-      path: '/layout',
-      component: () => import('@/view/layout'),
-      children: [
-        {
-          path: '/home',
-          component: () => import('@/view/home')
-        }
-      ]
-    }
-  ]
+  routes: pages
+})
+
+router.beforeEach((to,from,next) =>{
+  /* if(to.path == '/login') {
+
+  } */
+  NProgress.start();
+  next()
+})
+
+router.afterEach((to,from) =>{
+  NProgress.done()
+  /* Message.success('成功') */
 })
 
 export default router

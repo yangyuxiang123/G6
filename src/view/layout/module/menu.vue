@@ -1,75 +1,44 @@
 <template>
-  <div class="login">
-    <div class="title">	
-			<div class="fl">
-				英雄联盟 | 业务后台管理系统
-			</div>
-			<div class="fr">
-				<a target="_blank" href="http://lol.qq.com" class="el-button el-button--default">英雄联盟官网</a>
-			</div>
-		</div>
-    <div class="content">
-			<img class="m-img" src="@/assets/img/computer.png" />
-			<div class="m-form">
-				<div class="login-title">
-					<span>账号登陆</span>
-				</div>
-				<el-form class="form-box" ref="ruleForm" :model="ruleForm">
-					<el-form-item label=" " prop="loginName" style="margin-top: 10px">
-						<el-input
-              class="account"
-							placeholder="输入您的账号"
-							v-model.trim="ruleForm.loginName">
-							<i slot="prefix" class="el-icon-s-custom"></i>
-						</el-input>
-					</el-form-item>
-
-					<el-form-item label=" " prop="passWord" class="mt-30">
-						<el-input
-              class="account"
-							placeholder="输入您的登录密码"
-							type="password"
-							@keyup.native.13="handleSubmit"
-							v-model.trim="ruleForm.passWord">
-							<i slot="prefix" class="el-icon-lock"></i>
-						</el-input>
-					</el-form-item>
-
-					<el-checkbox class="mt-10" v-model="ruleForm.isAccountNumber">记住账号</el-checkbox>
-
-					<div class="mt-20">
-						<el-button
-							@click="handleSubmit"
-							:style="{
-								width : '100%',
-								height : '50px',
-								fontSize : '24px',
-							}"
-							type="warning"
-						>
-							登录
-						</el-button>
-					</div>
-				</el-form>
-			</div>
-		</div>
-		<div style="margin-top: 170px;color: #ffffff;font-size: 14.5px">© 2017-2018 深圳腾讯游戏英雄联盟有限公司 版权所有 浙ICP备17016869号-1</div>
+  <div>
+    <el-col :span="12" style="width: 100%">   
+      <el-menu
+        router
+        :default-active="$store.state.menu.menuActive"    
+        class="el-menu-vertical-demo"
+        :unique-opened="true"
+        active-background="#ffffff"
+        background-color="#373B46"
+        text-color="#ffffff"
+        style="border: none"
+        @select="handleSelect">
+        <template v-for="(item,index) in menuList">
+          <el-submenu :index="item.menuId + '' + index" :key="item.menuId + '' + index">
+            <template slot="title">
+              <span class="menuTitle">{{item.menuName}}</span>
+            </template>
+            <template v-for="(val,idx) in item.children">
+              <el-menu-item  :key="val.menuId + '' + idx" :index="`/layout/${val.menuUrl}`">
+                <span style="float: left;margin-left: 40px;">{{val.menuName}}</span>
+              </el-menu-item>
+            </template>
+          </el-submenu>
+        </template>
+      </el-menu>
+    </el-col>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'login',
   data() {
     return {
-			ruleForm: {},
-			menuList: [
+      menuList: [
         {
           menuName: '英雄概况',
           menuId: 1,
           children: [
             {
-              menuName : '英雄头像',
+              menuName : '首页新闻',
               menuId : 1-1,
               menuUrl : 'userQuery',
             },
@@ -240,31 +209,44 @@ export default {
     }
   },
   methods: {
-    handleSubmit() {
-      if(!this.ruleForm.loginName) {
-        this.$message.warning('请输入您的账号')
-        return
-      }
-      if(!this.ruleForm.passWord) {
-        this.$message.warning('请输入您的密码')
-        return
-      }
-			if(this.ruleForm.loginName && this.ruleForm.passWord) {
-				let login = true
-				this.menuList.map(i =>{
-					i.children.map(j =>{
-						if(j.menuUrl && login === true) {
-							login = false
-							this.$router.push('/layout/' + j.menuUrl)
-						}
-					})
-				})
-			}
-		}
+    getMeun() {
+      return new Promise((resove,reject) =>{
+        resove();
+      })
+    },
+    setMuenActive() {
+      let routerName = this.$route.meta.menuActive
+      this.menuList.map((i,k) =>{
+        i.children.map((v,k1) =>{
+          if(v.menuUrl.indexOf(routerName) !== -1) {
+            this.$store.commit('menu/setMenuActive', `/layout/${v.menuUrl}`)
+          }
+        })
+      })
+    },
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleSelect(val) {
+      console.log(val);     
+    }
   },
+  created() {
+    this.getMeun().then(this.setMuenActive);
+  }
 }
 </script>
 
 <style lang="less" scoped>
- @import './login.less';
+.el-menu-item-group__title {
+  display: none;
+}
+.menuTitle{
+  margin-left: 40px;
+  float: left;
+  font-size: 15px;
+}
 </style>

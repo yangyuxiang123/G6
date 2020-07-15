@@ -1,0 +1,662 @@
+// 英雄属性
+const herolist = [
+    {
+      date: '2020-06-22',
+      pepole: '嘉文四世',
+      resone: '德玛西亚皇子',
+      sex: '男',
+      phone: 18256037590,
+      home: '德玛西亚',
+      like: '上单，打野',
+      winRate: '51.3%',
+      head: require('../../assets/img/皇子.jpg'), 
+      location: '坦克',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [70, 60, 56, 80, 68]
+    },
+    {
+      date: '2020-06-23',
+      pepole: '盖伦',
+      resone: '德玛西亚之力',
+      sex: '男',
+      phone: 18256037591,
+      home: '德玛西亚',
+      like: '上单',
+      winRate: '57.7%',
+      head: require('../../assets/img/德玛.jpg'),
+      location: '坦克，战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [40, 20, 56, 80, 36]
+    },
+    {
+      date: '2020-06-23',
+      pepole: '赵兴',
+      resone: '德邦总管',
+      sex: '男',
+      phone: 18256037591,
+      home: '德玛西亚',
+      like: '打野',
+      winRate: '50.3%',
+      head: require('../../assets/img/赵兴.jpg'), 
+      location: '刺客，战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [70, 60, 56, 80, 68]
+    },
+    {
+      date: '2020-06-23',
+      pepole: '泰达米尔',
+      resone: '蛮族之王',
+      sex: '男',
+      phone: 18256037591,
+      home: '弗雷尔卓德',
+      like: '上单，打野',
+      winRate: '52.5%',
+      head: require('../../assets/img/蛮王.jpg'),
+      location: '刺客，战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [40, 20, 56, 80, 36] 
+    },
+    {
+      date: '2020-06-23',
+      pepole: '易大师',
+      resone: '无极剑圣',
+      sex: '男',
+      phone: 18256037591,
+      home: '艾欧尼亚',
+      like: '中单，打野',
+      winRate: '55.3%',
+      head: require('../../assets/img/剑圣.jpg'),
+      location: '刺客，战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [70, 60, 56, 80, 68]  
+    },
+    {
+      date: '2020-06-23',
+      pepole: '德莱厄斯',
+      resone: '诺克萨斯之手',
+      sex: '男',
+      phone: 18256037591,
+      home: '诺克萨斯',
+      like: '上单',
+      winRate: '56.3%',
+      head: require('../../assets/img/诺克.jpg'),
+      location: '战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [40, 20, 56, 80, 36]   
+    },
+    {
+      date: '2020-06-23',
+      pepole: '德莱文',
+      resone: '荣耀行刑官',
+      sex: '男',
+      phone: 18256037591,
+      home: '诺克萨斯',
+      like: '下路ADC',
+      winRate: '60.3%',
+      head: require('../../assets/img/德莱文.jpg'),
+      location: '射手',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [70, 60, 56, 80, 68]   
+    },
+    {
+      date: '2020-06-23',
+      pepole: '泰隆',
+      resone: '刀锋之影',
+      sex: '男',
+      phone: 18256037591,
+      home: '诺克萨斯',
+      like: '中单',
+      winRate: '51.9%',
+      head: require('../../assets/img/男刀.jpg'),
+      location: '刺客',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [40, 20, 56, 80, 36]  
+    },
+    {
+      date: '2020-06-23',
+      pepole: '莫德凯撒',
+      resone: '金属大师',
+      sex: '男',
+      phone: 18256037591,
+      home: '暗影岛',
+      like: '上单，中单',
+      winRate: '51.7%',
+      head: require('../../assets/img/铁男.jpg'),
+      location: '法坦，战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [70, 60, 56, 80, 68]   
+    },
+    {
+      date: '2020-06-23',
+      pepole: '贾克斯',
+      resone: '武器大师',
+      sex: '男',
+      phone: 18256037591,
+      home: '艾卡西亚',
+      like: '上单，打野',
+      winRate: '51.3%',
+      head: require('../../assets/img/武器.jpg'),
+      location: '战士',
+      attributeList: [
+        {
+          key: '生命',
+          value: '51%'
+        },
+        {
+          key: '攻击',
+          value: '65%'
+        },
+        {
+          key: '防御',
+          value: '75%'
+        },
+        {
+          key: '韧性',
+          value: '66%'
+        },
+      ],
+      performance: [40, 20, 56, 80, 36]  
+    }
+]
+
+//全英雄头像
+const heroAll = [
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  },
+  {
+    head: require('../../assets/img/武器.jpg'),
+    name: '武器大师'
+  }
+]
+
+export {
+  herolist,
+  heroAll
+}
