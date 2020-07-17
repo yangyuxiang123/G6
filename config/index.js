@@ -11,19 +11,20 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '*': {
-        target: 'http://192.168.30.11:7030',
         changeOrigin: true,
+        target: 'http://118.31.39.65:7030',
       }
     },
 
     // Various Dev Server settings
     host: '192.168.30.64', // can be overwritten by process.env.HOST
+    hot: true,
     port: 8800, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-    disableHostCheck: true,
+    disableHostCheck: false,
     
     /**
      * Source Maps

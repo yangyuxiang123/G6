@@ -119,7 +119,15 @@ export default {
       herolist
     }
   },
+  created() {
+    this.init()
+  },
   methods: {
+    init() {
+      this.$http.post('/court/saveCourtRefInfo.htm').then(res => {
+        console.log(res)
+      })
+    },
     handleClickDetails(row) {
       this.$refs.relationalGraph.open(row)
     },

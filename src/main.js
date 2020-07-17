@@ -11,6 +11,7 @@ import echarts from 'echarts'
 import qs from 'qs';
 
 Vue.use(ElementUI);
+import  './axios'
 Vue.prototype.$http = axios
 Vue.prototype.$qs = qs
 Vue.prototype.$echarts = echarts
