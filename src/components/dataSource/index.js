@@ -14,19 +14,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 550
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 70
         },
         {
           key: '防御',
-          value: '75%'
+          value: 30
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 50
         },
       ],
       performance: [70, 60, 56, 80, 68]
@@ -45,19 +45,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 560
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 65
         },
         {
           key: '防御',
-          value: '75%'
+          value: 35
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 70
         },
       ],
       performance: [40, 20, 56, 80, 36]
@@ -76,19 +76,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 550
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 70
         },
         {
           key: '防御',
-          value: '75%'
+          value: 35
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 60
         },
       ],
       performance: [70, 60, 56, 80, 68]
@@ -107,19 +107,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 540
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 80
         },
         {
           key: '防御',
-          value: '75%'
+          value: 30
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 50
         },
       ],
       performance: [40, 20, 56, 80, 36] 
@@ -138,19 +138,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 550
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 70
         },
         {
           key: '防御',
-          value: '75%'
+          value: 30
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 50
         },
       ],
       performance: [70, 60, 56, 80, 68]  
@@ -169,19 +169,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 560
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 65
         },
         {
           key: '防御',
-          value: '75%'
+          value: 35
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 70
         },
       ],
       performance: [40, 20, 56, 80, 36]   
@@ -200,19 +200,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 550
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 70
         },
         {
           key: '防御',
-          value: '75%'
+          value: 30
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 50
         },
       ],
       performance: [70, 60, 56, 80, 68]   
@@ -231,19 +231,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 540
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 70
         },
         {
           key: '防御',
-          value: '75%'
+          value: 33
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 50
         },
       ],
       performance: [40, 20, 56, 80, 36]  
@@ -262,19 +262,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 500
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 60
         },
         {
           key: '防御',
-          value: '75%'
+          value: 35
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 60
         },
       ],
       performance: [70, 60, 56, 80, 68]   
@@ -293,19 +293,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: '51%'
+          value: 550
         },
         {
           key: '攻击',
-          value: '65%'
+          value: 65
         },
         {
           key: '防御',
-          value: '75%'
+          value: 35
         },
         {
           key: '韧性',
-          value: '66%'
+          value: 60
         },
       ],
       performance: [40, 20, 56, 80, 36]  
@@ -315,345 +315,80 @@ const herolist = [
 //全英雄头像
 const heroAll = [
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/dazui.png'),
+    name: '深渊巨口',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/guangtou.png'),
+    name: '流浪法师',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/huabanxie.png'),
+    name: '复仇之矛',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/juemu.png'),
+    name: '掘墓者',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/laotou.png'),
+    name: '时光老头',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/luxian.png'),
+    name: '圣枪游侠',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/maomi.png'),
+    name: '魔法猫咪',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/meinan.png'),
+    name: '美男子',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/menyan.png'),
+    name: '永恒梦魇',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/nazha.png'),
+    name: '纳什之牙',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/qiunv.png'),
+    name: '暗黑元首',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/shenv.png'),
+    name: '魔蛇之拥',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/wei.png'),
+    name: '皮城执法官',
+    changes: '削弱'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/xueren.png'),
+    name: '雪人努努',
+    changes: '加强'
   },
   {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
+    head: require('../../assets/img/allHeadImg/yue.png'),
+    name: '猩红之月',
+    changes: '削弱'
   },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  },
-  {
-    head: require('../../assets/img/武器.jpg'),
-    name: '武器大师'
-  }
 ]
 
 export {

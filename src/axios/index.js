@@ -41,7 +41,7 @@ axios.interceptors.response.use(res =>{
       message: res.data.description,   
       showClose: true
     });
-    router.push('/login')
+    /* router.push('/login') */
     localStorage.removeItem('loginInfo')
     res.data.description = '用户登录超时'
     return Promise.reject(res)
@@ -60,7 +60,7 @@ axios.interceptors.response.use(res =>{
     return
   }
   if(error.response) {
-    switch (error.response.statu) {
+    switch (error.response.status) {
       case 400:
        Message({
          type: 'error',

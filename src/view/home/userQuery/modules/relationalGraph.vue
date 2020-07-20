@@ -12,9 +12,10 @@
           </div>
           <ul class="attribute">
             <li v-for="(i,k) in obj.attributeList" :key="k">
-              <div :class="{'lifeValue': i.key == '生命','attack': i.key == '攻击','defense': i.key == '防御','toughness': i.key == '韧性'}">
+              <div 
+              :class="{'lifeValue': i.key == '生命','attack': i.key == '攻击','defense': i.key == '防御','toughness': i.key == '韧性'}">
                 <span>{{i.key}}：</span> 
-                <span></span>
+                <span :style="{width: i.value + 'px'}"></span>
                 <span>{{i.value}}</span>
               </div>
             </li>

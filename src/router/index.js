@@ -21,7 +21,6 @@ router.beforeEach((to,from,next) =>{
 
 router.afterEach((to,from) =>{
   NProgress.done()
-  console.log(location)
   /* Message.success('成功') */
 })
 

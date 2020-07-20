@@ -20,9 +20,9 @@
             <el-image slot="reference" style="width: 95px; height: 95px" :src="hero.head"></el-image>
             <div class="demonstration">
               <p>{{ `外号人称：${hero.name}` }}</p>
-              <p>{{ `外号人称：${hero.name}` }}</p>
-              <p>{{ `外号人称：${hero.name}` }}</p>
-              <p>{{ `外号人称：${hero.name}` }}</p>
+              <p>{{ `最近改动：${hero.changes}` }}</p>
+              <!-- <p>{{ `外号人称：${hero.name}` }}</p>
+              <p>{{ `外号人称：${hero.name}` }}</p> -->
             </div>
           </el-popover>
           <div class="demonstration">{{ hero.name }}</div>
@@ -67,8 +67,12 @@ export default {
       text-align: center;
       flex-wrap: wrap;
       .block {
-        margin: 5px 0 5px 5px;
+        margin: 10px 40px 5px 15px;
         cursor: pointer;
+        .demonstration {
+          font-size: 13px;
+          color: #333333;
+        }
       }
     }
   }
