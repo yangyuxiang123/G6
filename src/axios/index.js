@@ -23,17 +23,18 @@ axios.interceptors.request.use(config =>{
       if(config.data) {
         config.data.token = token
       }else {
-        config.data = { token: token }
+        config.data = { token }
       }
     }
     if(config.method.toLowerCase() == 'get') {
       if(config.params) {
         config.params.token = token
       }else {
-        config.params = { token: token }
+        config.params = { token }
       }
     }
   }catch (err) {
+    console.log(err)
     /* router.push('/login') */
   }
 
