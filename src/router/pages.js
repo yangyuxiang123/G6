@@ -34,10 +34,10 @@ let pages = [
         }
       },
       {
-        path: 'map',
-        component: () => import('../components/HelloWorld.vue'),
+        path: 'userControl',
+        component: () => import('@/view/home/userControl'),
         meta: {
-          menuActive: 'map'
+          menuActive: 'userControl'
         }
       }
     ]
