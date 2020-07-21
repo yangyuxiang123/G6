@@ -14,19 +14,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 550
+          value: 150
         },
         {
           key: '攻击',
-          value: 70
+          value: 100
         },
         {
           key: '防御',
-          value: 30
+          value: 130
         },
         {
           key: '韧性',
-          value: 50
+          value: 200
         },
       ],
       performance: [70, 60, 56, 80, 68]
@@ -45,19 +45,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 560
+          value: 260
         },
         {
           key: '攻击',
-          value: 65
+          value: 105
         },
         {
           key: '防御',
-          value: 35
+          value: 135
         },
         {
           key: '韧性',
-          value: 70
+          value: 170
         },
       ],
       performance: [40, 20, 56, 80, 36]
@@ -76,19 +76,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 550
+          value: 120
         },
         {
           key: '攻击',
-          value: 70
+          value: 170
         },
         {
           key: '防御',
-          value: 35
+          value: 205
         },
         {
           key: '韧性',
-          value: 60
+          value: 160
         },
       ],
       performance: [70, 60, 56, 80, 68]
@@ -107,19 +107,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 540
+          value: 140
         },
         {
           key: '攻击',
-          value: 80
+          value: 180
         },
         {
           key: '防御',
-          value: 30
+          value: 130
         },
         {
           key: '韧性',
-          value: 50
+          value: 150
         },
       ],
       performance: [40, 20, 56, 80, 36] 
@@ -138,19 +138,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 550
+          value: 250
         },
         {
           key: '攻击',
-          value: 70
+          value: 208
         },
         {
           key: '防御',
-          value: 30
+          value: 200
         },
         {
           key: '韧性',
-          value: 50
+          value: 150
         },
       ],
       performance: [70, 60, 56, 80, 68]  
@@ -169,19 +169,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 560
+          value: 180
         },
         {
           key: '攻击',
-          value: 65
+          value: 165
         },
         {
           key: '防御',
-          value: 35
+          value: 135
         },
         {
           key: '韧性',
-          value: 70
+          value: 150
         },
       ],
       performance: [40, 20, 56, 80, 36]   
@@ -200,19 +200,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 550
+          value: 150
         },
         {
           key: '攻击',
-          value: 70
+          value: 170
         },
         {
           key: '防御',
-          value: 30
+          value: 230
         },
         {
           key: '韧性',
-          value: 50
+          value: 250
         },
       ],
       performance: [70, 60, 56, 80, 68]   
@@ -231,19 +231,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 540
+          value: 240
         },
         {
           key: '攻击',
-          value: 70
+          value: 107
         },
         {
           key: '防御',
-          value: 33
+          value: 133
         },
         {
           key: '韧性',
-          value: 50
+          value: 150
         },
       ],
       performance: [40, 20, 56, 80, 36]  
@@ -262,19 +262,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 500
+          value: 130
         },
         {
           key: '攻击',
-          value: 60
+          value: 160
         },
         {
           key: '防御',
-          value: 35
+          value: 135
         },
         {
           key: '韧性',
-          value: 60
+          value: 160
         },
       ],
       performance: [70, 60, 56, 80, 68]   
@@ -293,19 +293,19 @@ const herolist = [
       attributeList: [
         {
           key: '生命',
-          value: 550
+          value: 190
         },
         {
           key: '攻击',
-          value: 65
+          value: 165
         },
         {
           key: '防御',
-          value: 35
+          value: 135
         },
         {
           key: '韧性',
-          value: 60
+          value: 160
         },
       ],
       performance: [40, 20, 56, 80, 36]  

@@ -109,9 +109,9 @@ export default {
           color: rgba(154, 226, 46, 1);
           span:nth-last-of-type(2){
             display: inline-block;
-            height: 5px;
+            height: 7px;
             background: rgba(154, 226, 46, 1);
-            animation: lifeValues 2s forwards;
+            /* animation: lifeValues 2s forwards; */
           }
           @keyframes lifeValues {
             from {width: 0px;}
@@ -122,9 +122,9 @@ export default {
           color: rgba(230, 100, 100, 1);
           span:nth-last-of-type(2){
             display: inline-block;
-            height: 5px;
+            height: 7px;
             background: rgba(230, 100, 100, 1);
-            animation: attacks 2s forwards;
+            /* animation: attacks 2s forwards; */
           }
           @keyframes attacks {
             from {width: 0px;}
@@ -135,9 +135,9 @@ export default {
           color: rgba(167, 40, 34, 1);
           span:nth-last-of-type(2){
             display: inline-block;
-            height: 5px;
+            height: 7px;
             background: rgba(167, 40, 34, 1);
-            animation: defenses 2s forwards;
+            /* animation: defenses 2s forwards; */
           }
           @keyframes defenses {
             from {width: 0px;}
@@ -148,9 +148,9 @@ export default {
           color: rgba(39, 105, 186, 1);
           span:nth-last-of-type(2){
             display: inline-block;
-            height: 5px;
+            height: 7px;
             background: rgba(39, 105, 186, 1);
-            animation: toughnesses 2s forwards;
+            /* animation: toughnesses 2s forwards; */
           }
           @keyframes toughnesses {
             from {width: 0px;}
