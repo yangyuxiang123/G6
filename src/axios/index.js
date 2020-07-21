@@ -1,8 +1,10 @@
 import axios from 'axios'
 import Vue from 'vue'
 import qs from 'qs'
-import { Message } from 'element-ui'
+import { Message, Loading } from 'element-ui'
 import router from '../router'
+
+let loadingInstance
 
 axios.defaults.timeout = 60000
 
@@ -15,12 +17,24 @@ axios.interceptors.request.use(config =>{
 
   let token = ''
   try {
-    if(config.token || localStorage.getItem('loginInfo')) {
-      token = config.token || JSON.parse(localStorage.getItem('loginInfo')).token
-      config.headers['token'] = token
+    token = config.token || JSON.parse(localStorage.getItem('loginInfo')).token
+    config.headers['token'] = token
+    if(config.method.toLowerCase() == 'post') { 
+      if(config.data) {
+        config.data.token = token
+      }else {
+        config.data = { token: token }
+      }
+    }
+    if(config.method.toLowerCase() == 'get') {
+      if(config.params) {
+        config.params.token = token
+      }else {
+        config.params = { token: token }
+      }
     }
   }catch (err) {
-    router.push('/login')
+    /* router.push('/login') */
   }
 
   if(config.method == 'post' && config.mheaders !== true) {
@@ -28,6 +42,13 @@ axios.interceptors.request.use(config =>{
   }
   config.url = (config.apiPrefix ? `/${config.apiPrefix}` : '/manager') + config.url
   
+  loadingInstance = Loading.service({
+    lock: true,
+    text: '正在加载',
+    spinner: 'el-icon-loading',
+    background: 'rgba(255, 255, 255, 0.7)'
+  });
+
   return config
 }, (error) => {
   return Promise.reject(error)
@@ -35,6 +56,13 @@ axios.interceptors.request.use(config =>{
 
 //响应拦截
 axios.interceptors.response.use(res =>{
+
+  setTimeout(_ => {
+    if(loadingInstance){
+      loadingInstance.close();
+    }
+  },1000)
+
   if(res.data.code == '8888') {
     Message({
       type: 'error',
