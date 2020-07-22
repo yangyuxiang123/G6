@@ -62,7 +62,7 @@ axios.interceptors.response.use(res =>{
     if(loadingInstance){
       loadingInstance.close();
     }
-  },1000)
+  },500)
 
   if(res.data.code == '8888') {
     Message({
