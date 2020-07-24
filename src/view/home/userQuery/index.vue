@@ -84,6 +84,7 @@
 import { herolist } from '../../../components/dataSource/index'
 import RelationalGraphs from './modules/relationalGraph'
 import testMethod from '../../../components/mixins/_tables'
+/* import * as testMethod from '../../../components/mixins/_tables' */
 export default {
   data() {
     return {

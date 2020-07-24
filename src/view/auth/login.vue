@@ -53,7 +53,7 @@
 				</el-form>
 			</div>
 		</div>
-		<div style="margin-top: 170px;color: #ffffff;font-size: 14.5px">© 2017-2018 深圳腾讯游戏英雄联盟有限公司 版权所有 浙ICP备17016869号-1</div>
+		<div style="margin-top: 170px;text-align: center;color: #ffffff;font-size: 14.5px">© 2017-2018 深圳腾讯游戏英雄联盟有限公司 版权所有 浙ICP备17016869号-1</div>
   </div>
 </template>
 
