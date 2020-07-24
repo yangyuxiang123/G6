@@ -39,7 +39,7 @@ let pages = [
         meta: {
           menuActive: 'userControl'
         }
-      }
+      },
     ]
   }
 ];

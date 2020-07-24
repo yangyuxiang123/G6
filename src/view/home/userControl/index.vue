@@ -8,7 +8,7 @@
             <figure>
               IG对战OMG
             </figure>
-            <img :src="item.value" alt="" style="width: 100%;height: 100%">
+            <img :src="item.value" alt="" style="width: 100%;height: 100%" @click="openDetail(item)">
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -24,34 +24,43 @@ export default {
       count: 0,
       imgs: [
         {
-          value: require('../../../assets/img/德莱文.jpg')
+          value: require('../../../assets/img/德莱文.jpg'),
+          name: '德莱文'
         },
         {
-          value: require('../../../assets/img/德玛.jpg')
+          value: require('../../../assets/img/德玛.jpg'),
+          name: '盖伦'
         },
         {
           value: require('../../../assets/img/皇子.jpg')
         },
         {
-          value: require('../../../assets/img/剑圣.jpg')
+          value: require('../../../assets/img/剑圣.jpg'),
+          name: '嘉文四世'
         },
         {
-          value: require('../../../assets/img/蛮王.jpg')
+          value: require('../../../assets/img/蛮王.jpg'),
+          name: '泰达米尔'
         },
         {
-          value: require('../../../assets/img/男刀.jpg')
+          value: require('../../../assets/img/男刀.jpg'),
+          name: '泰隆'
         },
         {
-          value: require('../../../assets/img/诺克.jpg')
+          value: require('../../../assets/img/诺克.jpg'),
+          name: '德莱厄斯'
         },
         {
-          value: require('../../../assets/img/铁男.jpg')
+          value: require('../../../assets/img/铁男.jpg'),
+          name: '莫德凯撒'
         },
         {
-          value: require('../../../assets/img/武器.jpg')
+          value: require('../../../assets/img/武器.jpg'),
+          name: '贾克斯'
         },
         {
-          value: require('../../../assets/img/赵兴.jpg')
+          value: require('../../../assets/img/赵兴.jpg'),
+          name: '赵兴'
         },
       ]
     }
@@ -60,7 +69,10 @@ export default {
     loop() {
       this.count++
       console.log(this.count)
-    }
+    },
+    openDetail(data) {
+      console.log(data)
+    },
   }
 }
 </script>

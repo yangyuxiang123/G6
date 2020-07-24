@@ -5,25 +5,16 @@
     </div>
     <div class="contents">
       <div class="menuBar">
-        <Menu />
+        <Menu></Menu>
       </div>
       <div class="viewRouter">
-        <div class="viewContent">
-          <router-view/>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="page-content fl">
-      <div class="m-scrollbar-box">
-        <el-scrollbar :native="false">
-          <transition name="el-fade-in-linear" mode="out-in">
-            <keep-alive>
-              
-            </keep-alive>
+        <el-scrollbar wrap-class="layout-scroll">
+          <transition name="fade-transform" mode="out-in">
+            <router-view></router-view>
           </transition>
         </el-scrollbar>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -33,7 +24,9 @@ import Menu from './module/menu'
 export default {
   data() {
     return {
-
+      seachList: {
+        
+      }
     }
   },
   components: {
@@ -59,10 +52,17 @@ export default {
     background: #373B46;
   }
   .viewRouter{
-    width: calc(100vw - 245px);
-    margin-left: 5px;
-    .viewContent{
-      padding-right: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 39px;
+    right: 0;
+    bottom: 0;
+    left: 250px;
+    transition: all .3s linear;
+    .layout-scroll {
+      height: calc(100vh + 16px - 60px);
+      background-color: #F6F9FB;
+      box-sizing: border-box;
     }
   }
 }
