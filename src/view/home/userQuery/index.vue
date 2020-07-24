@@ -19,7 +19,7 @@
             placeholder="请输入手机号"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" size="small">查询</el-button>
+          <el-button type="primary" size="small" @click="checkMixin">查询</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -83,6 +83,7 @@
 <script>
 import { herolist } from '../../../components/dataSource/index'
 import RelationalGraphs from './modules/relationalGraph'
+import testMethod from '../../../components/mixins/_tables'
 export default {
   data() {
     return {
@@ -116,13 +117,23 @@ export default {
         total: 10
       },
       searchMode: {},
-      herolist
+      herolist,
+      nums: '我是父组件'
     }
+  },
+  mounted() {
+    /* console.log('我是父组件') */
   },
   created() {
     this.init()
   },
   methods: {
+    checkMixin() {
+      this.testYang()
+    },
+    testYang() {
+      console.log(this.nums)
+    },
     init() {
       this.$http.post('/court/saveCourtRefInfo.htm').then(res => {
         console.log(res)
@@ -139,7 +150,12 @@ export default {
   },
   components: {
     RelationalGraphs
-  }
+  },
+  mixins: [
+    testMethod({
+      init: true
+    }),
+  ],
 }
 </script>
 
