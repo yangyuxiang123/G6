@@ -389,6 +389,231 @@ const heroAll = [
     name: '猩红之月',
     changes: '削弱'
   },
+  {
+    head: require('../../assets/img/allHeadImg/dazui.png'),
+    name: '深渊巨口',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/guangtou.png'),
+    name: '流浪法师',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/huabanxie.png'),
+    name: '复仇之矛',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/juemu.png'),
+    name: '掘墓者',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/laotou.png'),
+    name: '时光老头',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/luxian.png'),
+    name: '圣枪游侠',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/maomi.png'),
+    name: '魔法猫咪',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/meinan.png'),
+    name: '美男子',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/menyan.png'),
+    name: '永恒梦魇',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/nazha.png'),
+    name: '纳什之牙',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/qiunv.png'),
+    name: '暗黑元首',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/shenv.png'),
+    name: '魔蛇之拥',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/wei.png'),
+    name: '皮城执法官',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/xueren.png'),
+    name: '雪人努努',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/yue.png'),
+    name: '猩红之月',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/dazui.png'),
+    name: '深渊巨口',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/guangtou.png'),
+    name: '流浪法师',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/huabanxie.png'),
+    name: '复仇之矛',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/juemu.png'),
+    name: '掘墓者',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/laotou.png'),
+    name: '时光老头',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/luxian.png'),
+    name: '圣枪游侠',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/maomi.png'),
+    name: '魔法猫咪',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/meinan.png'),
+    name: '美男子',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/menyan.png'),
+    name: '永恒梦魇',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/nazha.png'),
+    name: '纳什之牙',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/qiunv.png'),
+    name: '暗黑元首',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/shenv.png'),
+    name: '魔蛇之拥',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/wei.png'),
+    name: '皮城执法官',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/xueren.png'),
+    name: '雪人努努',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/yue.png'),
+    name: '猩红之月',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/dazui.png'),
+    name: '深渊巨口',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/guangtou.png'),
+    name: '流浪法师',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/huabanxie.png'),
+    name: '复仇之矛',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/juemu.png'),
+    name: '掘墓者',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/laotou.png'),
+    name: '时光老头',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/luxian.png'),
+    name: '圣枪游侠',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/maomi.png'),
+    name: '魔法猫咪',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/meinan.png'),
+    name: '美男子',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/menyan.png'),
+    name: '永恒梦魇',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/nazha.png'),
+    name: '纳什之牙',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/qiunv.png'),
+    name: '暗黑元首',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/shenv.png'),
+    name: '魔蛇之拥',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/wei.png'),
+    name: '皮城执法官',
+    changes: '削弱'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/xueren.png'),
+    name: '雪人努努',
+    changes: '加强'
+  },
+  {
+    head: require('../../assets/img/allHeadImg/yue.png'),
+    name: '猩红之月',
+    changes: '削弱'
+  },
 ]
 
 export {

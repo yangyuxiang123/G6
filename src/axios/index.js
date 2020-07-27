@@ -117,6 +117,7 @@ axios.interceptors.response.use(res =>{
         message: '网络出错，请稍后再次尝试',
         duration: 5000
       })
+      loadingInstance.close();
       break
     }
   }

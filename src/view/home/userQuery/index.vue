@@ -137,7 +137,13 @@ export default {
     },
     init() {
       this.$http.post('/court/saveCourtRefInfo.htm').then(res => {
-        console.log(res)
+        if(res.code == '0000') {
+          this.$message.success(res.description)
+        }else {
+          this.$message.error(res.description)
+        }
+      }).catch(err => {
+        console.log(err)
       })
     },
     handleClickDetails(row) {

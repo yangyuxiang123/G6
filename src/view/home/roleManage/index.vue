@@ -15,18 +15,21 @@
         <p>所有英雄</p>
       </div>
       <div class="heroContent">
-        <div class="block" v-for="(hero,index) in heroAll" :key="index">
-          <el-popover placement="right" title trigger="hover">
-            <el-image slot="reference" style="width: 95px; height: 95px" :src="hero.head"></el-image>
-            <div class="demonstration">
-              <p>{{ `外号人称：${hero.name}` }}</p>
-              <p>{{ `最近改动：${hero.changes}` }}</p>
-              <!-- <p>{{ `外号人称：${hero.name}` }}</p>
-              <p>{{ `外号人称：${hero.name}` }}</p> -->
-            </div>
-          </el-popover>
-          <div class="demonstration">{{ hero.name }}</div>
-        </div>
+        <template v-for="(hero,index) in heroAll">
+          <el-row :key="index" style="margin-left: 10px;margin-bottom: 10px;">
+          <el-col class="block">
+            <el-popover placement="right" title trigger="hover">
+              <el-image slot="reference" style="width: 95px; height: 95px" :src="hero.head"></el-image>
+              <div class="demonstration">
+                <p>{{ `外号人称：${hero.name}` }}</p>
+                <p>{{ `最近改动：${hero.changes}` }}</p>
+              </div>
+            </el-popover>
+            <div class="demonstration">{{ hero.name }}</div>
+          </el-col>
+        </el-row>
+        </template>
+        
       </div>
     </div>
   </div>
@@ -64,10 +67,10 @@ export default {
     }
     .heroContent {
       display: flex;
+      padding: 20px 0 0px 30px;
       text-align: center;
       flex-wrap: wrap;
       .block {
-        margin: 10px 40px 5px 15px;
         cursor: pointer;
         .demonstration {
           font-size: 13px;
