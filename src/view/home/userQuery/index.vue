@@ -75,7 +75,14 @@
       layout="total, sizes, prev, pager, next, jumper"
       :total="pager.total">
     </el-pagination>
-
+    <div>
+      <!-- <div>
+        <el-card style="height: 610px;">
+          <quill-editor v-model="content" ref="myQuillEditor" style="height: 500px;" :options="editorOption">
+          </quill-editor>
+        </el-card>
+      </div> -->
+    </div>
     <RelationalGraphs ref="relationalGraph"></RelationalGraphs>
   </div>
 </template>
@@ -85,10 +92,18 @@ import { herolist } from '../../../components/dataSource/index'
 import RelationalGraphs from './modules/relationalGraph'
 import testMethod from '../../../components/mixins/_tables'
 /* import * as testMethod from '../../../components/mixins/_tables' */
+import { quillEditor } from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 export default {
   data() {
     return {
-      pickerOptions1:{
+      content: '我是谁',
+      ueeditorHeight: '780px',
+        ontent: null,
+        editorOption: {},
+        pickerOptions1:{
         disabledDate: (value) => {
           if(!this.searchMode.endDate){
             return false;
@@ -156,7 +171,9 @@ export default {
     handleCurrentChange() {}
   },
   components: {
-    RelationalGraphs
+    RelationalGraphs,/* 
+    ueeditor, */
+    quillEditor
   },
   mixins: [
     testMethod({

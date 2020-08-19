@@ -10,6 +10,11 @@ import axios from 'axios'
 import echarts from 'echarts'
 import qs from 'qs';
 
+/* import { quillEditor } from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css' */
+
 Vue.use(ElementUI);
 import  './axios'
 Vue.prototype.$http = axios
